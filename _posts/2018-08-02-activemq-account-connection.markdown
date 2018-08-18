@@ -2,7 +2,7 @@
 layout: post
 title:  ActiveMQ Account 으로 연결 하기
 date:   2018-08-02 22:38:39 +0900
-categories: activemq, spring-boot
+categories: activemq spring-boot
 ---
 ActiveMQ Account 으로 연결 하기
 ===
