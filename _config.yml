@@ -55,4 +55,6 @@ minima:
 
 
 disqus:
-  shortname: deuxksy
+  shortname: tech-zzizily-com
+
+show_excerpts: true
