@@ -60,5 +60,9 @@ minima:
 disqus:
   shortname: tech-zzizily-com
 
+
+#Enabling Google Analytics
+google_analytics: UA-32609745-9
+
 #글 리스트 출력 할때 좀더 보여 주기 안하는게 더 좋아 보임
 show_excerpts: false
