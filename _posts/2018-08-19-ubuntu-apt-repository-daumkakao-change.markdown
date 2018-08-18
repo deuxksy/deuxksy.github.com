@@ -14,4 +14,4 @@ categories: Ubuntu APT
 
 * [우분투의 apt 기본 미러를 다음 카카오로 변경][req-1]
  
-[req-1]: https://talk.jekyllrb.com/
+[req-1]: https://gist.github.com/lesstif/8185f143ba7b8881e767900b1c8e98ad
