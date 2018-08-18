@@ -4,8 +4,6 @@ title:  ActiveMQ Account 으로 연결 하기
 date:   2018-08-02 22:38:39 +0900
 categories: activemq spring-boot
 ---
-ActiveMQ Account 으로 연결 하기
-===
 # 1. ActiveMQ activemq-security.xml
 ActiveMQ 는 기본 설정으로 Anonymous 로 연결이 가능 하다.<br/>
 실제 서비스시에는 Anonymous 차단 하고 Queue 또는 Topic 에 Account 에 따른 정책이 필요함<br/>

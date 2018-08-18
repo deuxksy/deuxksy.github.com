@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "Queue 와  Topic 의 차이"
+title:  Queue 와  Topic  차이
 date:   2018-07-18 22:38:39 +0900
 categories: MQ
 ---
-Queue VS Topic
-===
 
 # Queue
 Fist In First Out (FIFO) 먼저 입력한 데이터가 먼저 나오는 구조<br/>

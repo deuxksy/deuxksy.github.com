@@ -4,9 +4,6 @@ title:  Ubuntu APT Repository DaumKaKao 로 변경하기
 date:   2018-08-19 00:53:39 +0900
 categories: Ubuntu APT
 ---
-Ubuntu APT Repository DaumKaKao 로 변경하기
-===
-
     #!/bin/sh
     SL=/etc/apt/sources.list
     cp ${SL} ${SL}.org
@@ -15,6 +12,6 @@ Ubuntu APT Repository DaumKaKao 로 변경하기
     ## check
     apt update
 
-
-# 참고
-* [우분투의 apt 기본 미러를 다음 카카오로 변경] (https://gist.github.com/lesstif/8185f143ba7b8881e767900b1c8e98ad)
+* [우분투의 apt 기본 미러를 다음 카카오로 변경][req-1]
+ 
+[req-1]: https://talk.jekyllrb.com/
