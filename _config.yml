@@ -57,4 +57,4 @@ minima:
 disqus:
   shortname: tech-zzizily-com
 
-# show_excerpts: true
+show_excerpts: true
