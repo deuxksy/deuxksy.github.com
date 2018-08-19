@@ -38,7 +38,7 @@ HTLM, CSS, JS 창이 분리가 되서 아래쪽에 실시간 코딩 되는됭 �
 Bootstrap 3 이용한 관리자 페이지
 
 # 7. [portainer(Docker, UI)](https://github.com/portainer/portainer)
-Docker Web UI Template 딱히 쓸일은 없을거 같음 Demo 를 보고 싶으로 http://demo.portainer.io/#/auth admin / tryportainer
+Docker Web UI Template 딱히 쓸일은 없을거 같음 [Demo](http://demo.portainer.io/#/auth) 계정은 admin / tryportainer
 
 # 8. [blackeye(Security)](https://github.com/thelinuxchoice/blackeye)
 Phishing Tool 별개다 있넹 ㅋㅋ 보안 쪽으로 쓸일이 있을까 32 개의 사이트를 지원함<br>
@@ -67,7 +67,7 @@ Hexo 보다는 Hugo 로 가자 ㅋ
 
 # 10. [retrofit(Java)](https://github.com/square/retrofit)
 [Retrofit](https://square.github.io/retrofit/) Http Client 하아! 아나... 가이드 문서가 친절하지 않음 <br>
-차라리 [Apache HttpClient](https://hc.apache.org/index.html) (Maven)[https://mvnrepository.com/artifact/org.apache.httpcomponents/fluent-hc] 가 더 익숙함
+차라리 [Apache HttpClient](https://hc.apache.org/index.html) [Maven](https://mvnrepository.com/artifact/org.apache.httpcomponents/fluent-hc) 가 더 익숙함
 
 # 11. [Tone.js(JavaScript)](https://github.com/Tonejs/Tone.js)
 Web Audio framework [exmaples](https://tonejs.github.io/examples/), [demo](https://tonejs.github.io/demos)
