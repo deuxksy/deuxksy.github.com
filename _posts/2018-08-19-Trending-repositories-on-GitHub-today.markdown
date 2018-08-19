@@ -148,10 +148,10 @@ Raspberry Pi 이용한 Network 광고 차단 별걸 다하구나..
 * Exit program
 
 # 25. [discord.sh(Shell)](https://github.com/ChaoticWeg/discord.sh)
-Discord 를 쓰기말 할수 Bash 어플 일하면서 게임하자 ㅋㅋㅋ
+Discord 를 쓰기 만 할수 있는 Bash 어플 일하면서 게임하자 ㅋㅋㅋ
 
 # 26. [bash-it(Shell)](https://github.com/Bash-it/bash-it)
-Bash 용 Scripts 모음 SSL 인증서 발급 하기 좋겠당
+Bash 용 Scripts 모음
 
 # 27. [acme.sh(Shell)](https://github.com/Neilpang/acme.sh)
 Bash 에서 ACME(자동화된 인증서 관리 환경) 지원 나중에 무료 SSL 설치 할때 시도 해보자
