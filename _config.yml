@@ -38,6 +38,9 @@ plugins:
   - jekyll-include-cache
   - jemoji
 
+category_dir: category/
+tag_dir: tag/
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
