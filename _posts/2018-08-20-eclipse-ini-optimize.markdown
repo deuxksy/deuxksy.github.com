@@ -2,7 +2,7 @@
 layout: post
 title:  Eclipse ini 최적화 하기
 date:   2018-08-20 23:54:00 +0900
-categories: Eclipse
+categories: [Eclipse]
 ---
 # eclipse.ini
 
