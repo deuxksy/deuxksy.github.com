@@ -24,4 +24,4 @@ github 에서 repository 만들고 local 에 있는 Source 에 git remote add or
 문재는 해결 되었다
 
 # 참조
-[Git refusing to merge unrelated histories on rebase](https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase)
+* [Git refusing to merge unrelated histories on rebase](https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase)
