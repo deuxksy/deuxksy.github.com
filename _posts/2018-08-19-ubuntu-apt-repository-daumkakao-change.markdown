@@ -5,7 +5,7 @@ date:   2018-08-19 00:53:39 +0900
 categories: [Ubuntu, APT]
 tags: [Ubuntu, APT]
 ---
-# 
+# change-ubuntu-mirror.sh
     #!/bin/sh
     SL=/etc/apt/sources.list
     cp ${SL} ${SL}.org
