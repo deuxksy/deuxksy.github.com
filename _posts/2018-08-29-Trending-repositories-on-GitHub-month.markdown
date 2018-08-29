@@ -50,3 +50,6 @@ youtube 동영상을 mp3, mp4 로 다운 받기
 # 12. [Home Assistant(IOT)](https://github.com/home-assistant/home-assistant)
 Amazon Echo, Apple TV, IFTTT, 삼성 TV, 샤오미 GateWay 등 다양한 HOME IOT 구축 하게 해주는 솔루션 쩐다 쩔어...<br>
 WEB GUI 지원 하고 개발자 모듈도 있고 우와... 진짜...
+
+# 13. [Face Recognition](https://github.com/ageitgey/face_recognition)
+간단하게 사용 할수 있는 얼굴인식 하는 library Windows 에서 설치 안됨 [dlib](http://dlib.net/) 내부적으로 사용
