@@ -2,7 +2,7 @@
 layout: post
 title:  Trending repositories on GitHub today (180819)
 date:   2018-08-19 16:29:00 +0900
-categories: github trending today
+categories: [github, trending, today]
 ---
 # 1. [netdata(Linux, Monitor)](https://github.com/firehol/netdata)
 Linux 시스템 모니터링 쉬운 Agent 설치 와 Web 보기 쉽게 되 있음 https://nicolargo.github.io/glances/ 보다는 쉽게 되있는거 같음<br>
