@@ -53,3 +53,8 @@ WEB GUI 지원 하고 개발자 모듈도 있고 우와... 진짜...
 
 # 13. [Face Recognition](https://github.com/ageitgey/face_recognition)
 간단하게 사용 할수 있는 얼굴인식 하는 library Windows 에서 설치 안됨 [dlib](http://dlib.net/) 내부적으로 사용
+
+## 지원
+* macOS 공식지원
+* Linux 왠만하면됨
+* [Windows](https://github.com/ageitgey/face_recognition/issues/175#issue-257710508) 공식 지원 안함
