@@ -25,4 +25,4 @@ categories: [jekyll]
     &lbrace;&percnt; endfor &percnt;&rbrace;
 
 ## 참조
-* [3 Simple Steps To Setup Jekyll Categories And Tags](https://blog.webjeda.com/jekyll-categories/)`
+* [3 Simple Steps To Setup Jekyll Categories And Tags](https://blog.webjeda.com/jekyll-categories/)
