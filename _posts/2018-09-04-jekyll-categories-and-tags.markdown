@@ -13,17 +13,17 @@ title: Categories
 permalink: /categoreis/
 ---
 
-{% for category in site.categories %}
-    <div class="archive-group">
-      {% capture category_name %}{{ category | first }}{% endcapture %}
-      <h3 class="category-head">{{ category_name }}</h3>
-      {% for post in site.categories[category_name] %}
-      <article class="archive-item">
-        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-      </article>
-      {% endfor %}
-    </div>
-{% endfor %}
+&lbrace;&percnt; for category in site.categories &percnt;&rbrace;
+    &lt;div class=&quot;archive-group&quot;&gt;
+      &lbrace;&percnt; capture category_name &percnt;&rbrace;&lbrace;&lbrace; category | first &rbrace;&rbrace;&lbrace;&percnt; endcapture &percnt;&rbrace;
+      &lt;h3 class=&quot;category-head&quot;&gt;&lbrace;&lbrace; category_name &rbrace;&rbrace;&lt;/h3&gt;
+      &lbrace;&percnt; for post in site.categories[category_name] &percnt;&rbrace;
+      &lt;article class=&quot;archive-item&quot;&gt;
+        &lt;h4&gt;&lt;a href=&quot;&lbrace;&lbrace; site.baseurl &rbrace;&rbrace;&lbrace;&lbrace; post.url &rbrace;&rbrace;&quot;&gt;&lbrace;&lbrace;post.title&rbrace;&rbrace;&lt;/a&gt;&lt;/h4&gt;
+      &lt;/article&gt;
+      &lbrace;&percnt; endfor &percnt;&rbrace;
+    &lt;/div&gt;
+&lbrace;&percnt; endfor &percnt;&rbrace;
 ```
 
 ## 참조
