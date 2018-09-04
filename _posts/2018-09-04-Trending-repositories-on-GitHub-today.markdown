@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Trending repositories on GitHub week (180904)
-date:   2018-09-04 22:01:00 +0900
+date:   2018-09-04 22:01:00 +09:00
 categories: [github, trending, week]
 ---
 # Trending repositories on GitHub week (180904)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Trending repositories on GitHub today (180902)
-date:   2018-09-02 17:05:00 +0900
+date:   2018-09-02 17:05:00 +09:00
 categories: [github, trending, today]
 ---
 # Trending repositories on GitHub today (180902)
