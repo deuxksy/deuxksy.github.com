@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Trending repositories on GitHub month (180829)
-date:   2018-08-29 23:29:00 +0900
+date:   2018-08-29 23:29:00
 categories: [github, trending, month]
 ---
 # 1. [Front-End Performance Checklist(javascript, html, css)](https://github.com/thedaviddias/Front-End-Performance-Checklist)
