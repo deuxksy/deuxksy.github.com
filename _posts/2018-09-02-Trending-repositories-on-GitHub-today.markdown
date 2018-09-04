@@ -35,7 +35,7 @@ USB 로 OS 설치 할수 있게 해줌
 
 다양한 Font icon 대신 쓰기 좋을거 같음
 
-## 7. [BULMA (CSS)] (https://github.com/jgthms/bulma)
+## 7. [BULMA (CSS)](https://github.com/jgthms/bulma)
 
 CSS Framework
 
@@ -59,15 +59,15 @@ html 에서 images 를 천천히 loading 하기 괜추 하네 나중에 써바�
 
 Java, C++, Object C 지원하는 암호화 모듈 나중에 Go, JavaScript 는 개발중... 암호화 할일 있으면 써바야징
 
-## 13. [BizCharts (JavaScript)] (https://github.com/alibaba/BizCharts)
+## 13. [BizCharts (JavaScript)](https://github.com/alibaba/BizCharts)
 
 Chart Library
 
-## 14. [wttr.in] (https://github.com/chubin/wttr.in)
+## 14. [wttr.in](https://github.com/chubin/wttr.in)
 
 날씨 보기 좋음
 
-## 15. [Terminals Are Sexy] (https://github.com/k4m4/terminals-are-sexy)
+## 15. [Terminals Are Sexy](https://github.com/k4m4/terminals-are-sexy)
 
 Terminal 을 아주 섹시 하게 쓸수 있게 선별된 frameworks, plugin 등 소개
 
