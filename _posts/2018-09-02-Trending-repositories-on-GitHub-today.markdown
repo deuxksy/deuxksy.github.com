@@ -70,3 +70,6 @@ Chart Library
 ## 15. [Terminals Are Sexy] (https://github.com/k4m4/terminals-are-sexy)
 
 Terminal 을 아주 섹시 하게 쓸수 있게 선별된 frameworks, plugin 등 소개
+
+## 16. [jq](https://github.com/stedolan/jq)
+cli 환경에서 json paser
