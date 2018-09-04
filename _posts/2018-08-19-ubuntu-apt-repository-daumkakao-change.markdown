@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Ubuntu APT Repository DaumKaKao 로 변경하기
-date:   2018-08-19 00:53:39 +0900
+date:   2018-08-19 00:53:39
 categories: [Ubuntu, APT]
 tags: [Ubuntu, APT]
 ---

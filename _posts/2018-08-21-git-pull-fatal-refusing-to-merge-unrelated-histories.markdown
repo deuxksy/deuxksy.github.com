@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  git pull fatal refusing to merge unrelated historiess
-date:   2018-08-21 01:49:00 +0900
+date:   2018-08-21 01:49:00
 categories: [Git]
 tags: [Git, pull]
 ---

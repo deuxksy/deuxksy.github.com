@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Trending repositories on GitHub today (180819)
-date:   2018-08-19 16:29:00 +0900
+date:   2018-08-19 16:29:00
 categories: [github, trending, today]
 ---
 # 1. [netdata(Linux, Monitor)](https://github.com/firehol/netdata)

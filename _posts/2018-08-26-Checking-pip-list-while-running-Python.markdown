@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Checking pip list while running Python
-date: 2018-08-26 14:59:00 +0900
+date: 2018-08-26 14:59:00
 categories: [Python]
 tags: [Python, pip]
 ---

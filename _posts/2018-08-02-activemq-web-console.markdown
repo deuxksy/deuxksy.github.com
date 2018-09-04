@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  ActiveMQ Web Console ID/PW 변경
-date:   2018-08-02 22:38:39 +0900
+date:   2018-08-02 22:38:39
 categories: activemq
 ---
 Active (5.14.5) 사용시 관리자 Web Console 이 있어서 Queue 와 Topic 모니터링이 용이 하다 <br/>
