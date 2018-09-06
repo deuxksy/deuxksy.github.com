@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring Boot HikariCP DataSource 등록 
+title: Spring Boot HikariCP DataSource 등록 실패
 date: 2018-09-06 18:00:00
 categories: [Spring, Boot, DataSource, HikariCP]
 ---
