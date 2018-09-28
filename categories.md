@@ -3,6 +3,7 @@ layout: page
 title: Categories
 permalink: /categoreis/
 ---
+<div class="archive">
 {% for category in site.categories %}
     <div class="archive-group">
       {% capture category_name %}{{ category | first }}{% endcapture %}
@@ -14,3 +15,4 @@ permalink: /categoreis/
       {% endfor %}
     </div>
 {% endfor %}
+</div>
