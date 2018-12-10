@@ -35,10 +35,10 @@ ${tomcat}/conf/context.xml
 />
 ```
 
-### 1.2. DB 생성
+### 1.2. DB 생성 및 설정
 
 [설치 가이드](https://gerrit-documentation.storage.googleapis.com/Documentation/2.16.1/install-j2ee.html) 를 보면 [site initialization](https://gerrit-documentation.storage.googleapis.com/Documentation/2.16.1/install.html#init) 진행 해야 한다고 나옴 왜 해야 하지 하기 싫어 Tomcat 으로 하는되  
-진행 하니 [site initialization](https://gerrit-documentation.storage.googleapis.com/Documentation/2.16.1/install.html#init) 과정을 거치면 Table Data 생성 작업이 진행됨
+진행 하니 [site initialization](https://gerrit-documentation.storage.googleapis.com/Documentation/2.16.1/install.html#init) 과정을 거치면 Table Data 생성 작업이 진행됨 그리고 설정 파일등 참조 하는거 같음 삭제 
 
 ### 1.3. gerrit.war tomcat/webapps 폴더에 복사
 
