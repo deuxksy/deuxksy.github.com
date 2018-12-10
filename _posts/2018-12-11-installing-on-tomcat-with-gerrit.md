@@ -11,7 +11,7 @@ categories: [gerrit, code review, install]
 - war 를 tomcat 에 넣기
 - java -jar gerrit.war init -d /path/to/your/gerrit_application_directory
 
-별도의 설치 과정을 거치지 않고 ${Tomcat}/webapps 폴더에 넣어서 설치 하고 싶음 war 파일로 배포하자나  
+별도의 설치 과정을 거치지 않고 ${Tomcat}/webapps 폴더에 넣어서 설치 하고 싶음
 [설치 가이드](https://gerrit-documentation.storage.googleapis.com/Documentation/2.16.1/install-j2ee.html) 있지만 친절 하지가 않음 특히 ***gerrit-2.16, gerrit-2.15 버전은 버그가 있어서 설치가 안됨***  
 gerrit-2.14.17 설치가 가능함 이하 버전은 확인 안함
 
