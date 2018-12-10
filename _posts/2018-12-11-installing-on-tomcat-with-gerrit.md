@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Installing on tomcat with gerrit.war
+title:  Tomcat 을 이용해서 Gerrit 설치 하기
 date:   2018-12-11 01:30:00
 categories: [gerrit, code review, install]
 ---
