@@ -37,6 +37,9 @@ plugins:
   - jekyll-mentions
   - jekyll-include-cache
   - jemoji
+  
+paginate: 4
+paginate_path: posts/page:num/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
