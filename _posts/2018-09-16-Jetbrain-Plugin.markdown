@@ -10,6 +10,17 @@ Eclipse 가 참 좋지만 언제 부터가 좀 정체되어 있다는 생각이�
 ## Presentation assistance
 현재 사용한 기능의 단축키 를 toast 형태로 알림 이거는 쩌는듯
 
+## Rainbow Brackets
+{}() 에 대한 색깔 놀이 및 영역 및 변수 하이라이트
+
+<kbd>Ctrl + mouse left click</kbd>(Windows & Linux) or <kbd>Meta+ mouse left click</kbd>(Mac):
+
+![](https://user-images.githubusercontent.com/10737066/40234968-46593fe2-5adb-11e8-8ea8-0026fad86ca9.gif)
+
+<kbd>Alt + mouse left click</kbd>:
+
+![](https://user-images.githubusercontent.com/10737066/40235004-642dfe54-5adb-11e8-9fd7-648b92fab8f5.gif)
+
 ## .env
 .env 파일이 있으면 환경 설정 하기
 
@@ -27,9 +38,6 @@ IDEA Console 에 나오는 내용에 대해서 색갈 놀이 가능
 
 ## Lombok Plugin
 Lombok 지원 "Build, Execution, Deployment > Compiler > Annotation Processors > Enable annotation processing"  CHECK
-
-## Rainbow Brackets
-{}() 에 대한 색깔 놀이
 
 ## Translator by jojoldu
 네이버(id 발급 필요), MS 등의 API 를 이용한 단어 번역 단축키가 중복이 좀 되서 KEYMAP 재정의 필요
