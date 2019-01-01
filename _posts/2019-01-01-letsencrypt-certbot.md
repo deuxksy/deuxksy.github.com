@@ -93,3 +93,6 @@ root@linux:~$ cd /etc/letsencrypt
 
 덧. zsh 에서 *.domain.com 하니깐 zsh: no matches found: *.domain.com 경고 창이 뜨면서 진행 안됨  
 덧덧. dns 서버에 _acme-challenge 등록시 2개 이상 입력 해주어야함 google domain 에서는 + 아이콘이 있어서 복수 입력 가능
+
+## 참조
+[How to use Let's Encrypt DNS challenge validation?](https://serverfault.com/questions/750902/how-to-use-lets-encrypt-dns-challenge-validation)
