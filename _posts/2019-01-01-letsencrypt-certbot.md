@@ -5,7 +5,7 @@ date:  2019-01-01 18:24:00
 categories: [SSL, certbot, DNS, spring boot]
 ---
 
-# Let's Encrypt with certbot
+# Let's Encrypt with certbot and keytool
 
 Spring Boot 에 https 적용을 해보자 
 
@@ -157,7 +157,7 @@ zsh: no matches found: *.domain.com 진행 안됨
 _acme-challenge 2개를 입력 해주어야함 google domain 에서는 + 아이콘이 있어서 복수 입력 가능  
 dns 업체별로 방식이 다름 aws 에서는 복수 열로 입력이 가능 해서 뛰어쓰기로 구분
 
-## 숙재
+## 숙
 
 3개월 마다 한번씩 자동화 하기?
 
