@@ -10,11 +10,11 @@ categories: [SSL, certbot, DNS]
 https 적용을 해보자
 
 certbot 는 3가지 방법을 지원한다
-- standalone
- 웹서버 미사용 상태에서 임시 웹서버를 동작해서 인증
-- webroot
+- standalone  
+ 임시 웹서버를 동작해서 인증
+- webroot  
  웹서버 소스 폴더에 파일생성 해서 인증
-- manual
+- manual  
  수동으로 이것저것 해서 인증
 
 standalone, webroot 는 먼가 서버에 작업 한다는것이 좀 귀찮음
@@ -91,7 +91,5 @@ IMPORTANT NOTES:
 root@linux:~$ cd /etc/letsencrypt
 ```
 
-
-
 덧. zsh 에서 *.domain.com 하니깐 zsh: no matches found: *.domain.com 경고 창이 뜨면서 진행 안됨  
-덧덧. dns 서버에 _acme-challenge 등록시 2개 이상 입력 해주어야함 google domain 에서는 + 아이콘이 있어서 복수 
+덧덧. dns 서버에 _acme-challenge 등록시 2개 이상 입력 해주어야함 google domain 에서는 + 아이콘이 있어서 복수 입력 가능
