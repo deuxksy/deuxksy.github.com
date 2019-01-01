@@ -11,14 +11,16 @@ https 적용을 해보자
 
 certbot 는 3가지 방법을 지원한다
 - standalone  
- 임시 웹서버를 동작해서 인증
+ 임시 웹서버를 동작해서 인증 인증서버에 웹서버 동작중일경우 중지해야함
 - webroot  
  웹서버 소스 폴더에 파일생성 해서 인증
 - manual  
- 수동으로 이것저것 해서 인증
+ 수동으로 이것저것 해서 인증 DNS 에 txt 정보만 입력 해서 사용 가능
 
 standalone, webroot 는 먼가 서버에 작업 한다는것이 좀 귀찮음
 manual dns 에 txt 값 2개만 등록해주면됨 이게더 편하겠네
+
+## 1. 작업
 
 ```bash
 root@linux:~$ sudo certbot certonly \
@@ -90,9 +92,35 @@ IMPORTANT NOTES:
 
 root@linux:~$ cd /etc/letsencrypt
 ```
+openssl pkcs12 -export -in cert.pem -inkey privkey.pem -out cert_and_key.p12 -name zzizily -CAfile chain.pem -caname zzizily
 
-덧. zsh 에서 *.domain.com 하니깐 zsh: no matches found: *.domain.com 경고 창이 뜨면서 진행 안됨  
-덧덧. dns 서버에 _acme-challenge 등록시 2개 이상 입력 해주어야함 google domain 에서는 + 아이콘이 있어서 복수 입력 가능
+keytool -importkeystore -deststorepass qwe123 -destkeypass qwe123 -destkeystore letsencrypt.jks -srckeystore cert_and_key.p12 -srcstoretype PKCS12 -alias zzizily
+
+keytool -importkeystore -destkeystore letsencrypt.jks -srckeystore letsencrypt.jks -deststoretype pkcs12
+
+## 2. 작업중 문제점 발생
+
+### 2.1 zsh
+```zsh
+root@linux:~$ sudo certbot certonly \
+> --manual \
+> --preferred-challenges=dns \
+> --email user@gmail.com \
+> --server https://acme-v02.api.letsencrypt.org/directory \
+> --agree-tos \
+> --debug \
+> --no-bootstrap \
+> -d domain.com \
+> -d *.domain.com
+
+zsh: no matches found: *.domain.com
+```
+zsh: no matches found: *.domain.com 진행 안됨
+
+### 2.2 dns txt record 등록 
+
+_acme-challenge 2개를 입력 해주어야함 google domain 에서는 + 아이콘이 있어서 복수 입력 가능  
+dns 업체별로 방식이 다름 aws 에서는 복수 열로 입력이 가능 해서 뛰어쓰기로 구분
 
 ## 참조
 [How to use Let's Encrypt DNS challenge validation?](https://serverfault.com/questions/750902/how-to-use-lets-encrypt-dns-challenge-validation)
