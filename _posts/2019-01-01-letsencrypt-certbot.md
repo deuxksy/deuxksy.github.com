@@ -20,8 +20,7 @@ certbot 는 3가지 방법을 지원한다
 standalone, webroot 는 먼가 서버에 작업 한다는것이 좀 귀찮음
 manual dns 에 txt 값 2개만 등록해주면됨 이게더 편하겠네
 
-'''bash
-
+```bash
 root@linux:~$ sudo certbot certonly \
 > --manual \
 > --preferred-challenges=dns \
@@ -90,8 +89,7 @@ IMPORTANT NOTES:
    Donating to EFF:                    https://eff.org/donate-le
 
 root@linux:~$ cd /etc/letsencrypt
-
-'''
+```
 
 
 
