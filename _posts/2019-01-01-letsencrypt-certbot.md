@@ -163,4 +163,4 @@ dns 업체별로 방식이 다름 aws 에서는 복수 열로 입력이 가능 �
 
 ## 참조
 - [How to use Let's Encrypt DNS challenge validation?](https://serverfault.com/questions/750902/how-to-use-lets-encrypt-dns-challenge-validation)
-- [Certbot으로 만든 인증서를 Spring Boot에서 사용하기]https://elfinlas.github.io/2018/03/19/spring-boot-tls-certbot/
+- [Certbot으로 만든 인증서를 Spring Boot에서 사용하기](https://elfinlas.github.io/2018/03/19/spring-boot-tls-certbot)
