@@ -1,27 +1,39 @@
 ---
 layout: post
-title: Let's Encrypt with certbot
+title: Let's Encrypt with certbot and keytool
 date:  2019-01-01 18:24:00 
-categories: [SSL, certbot, DNS]
+categories: [SSL, certbot, DNS, spring boot]
 ---
 
 # Let's Encrypt with certbot
 
-https 적용을 해보자
+Spring Boot 에 https 적용을 해보자 
 
-certbot 는 3가지 방법을 지원한다
+certbot 인증방법
 - standalone  
- 임시 웹서버를 동작해서 인증 인증서버에 웹서버 동작중일경우 중지해야함
+ 임시 웹서버를 동작해서 인증  
+ 해당 서버에 웹서버 동작중일 경우 중지 해야 함
 - webroot  
- 웹서버 소스 폴더에 파일생성 해서 인증
+ 웹서버 소스 폴더에 파일 생성 해서 인증 웹서버 중지 필요 없음
 - manual  
- 수동으로 이것저것 해서 인증 DNS 에 txt 정보만 입력 해서 사용 가능
+ DNS 서버에 txt 정보를 입력 해서 인증 더큰 장점은 현재 운영중인 서버에 작업을 안해도됨  
+ 하지만 3개월 마다 1번씩 작업을 해야한다면?  
+ 내 최종 목적은 spring boot 에도 적용해야 하는됭 그럼?  
 
-standalone, webroot 는 먼가 서버에 작업 한다는것이 좀 귀찮음
-manual dns 에 txt 값 2개만 등록해주면됨 이게더 편하겠네
+standalone, webroot 는 먼가 서버에 작업 한다는것이 좀 귀찮음  
+지금은 manual dns 에 txt 값 2개만 등록 해주면 끝 이게 더 편해보임  
+
+작업 순서
+1. certbot 설치 
+1. certbot --manaul 이용한 pem 생성
+1. openssl 이용한 p12 생성
+1. keytool 이용한 jks 생성
+1. spring boot 에 적용
+
 
 ## 1. 작업
 
+### 1.1 Certbot pem 파일 생성
 ```bash
 root@linux:~$ sudo certbot certonly \
 > --manual \
@@ -92,11 +104,34 @@ IMPORTANT NOTES:
 
 root@linux:~$ cd /etc/letsencrypt
 ```
-openssl pkcs12 -export -in cert.pem -inkey privkey.pem -out cert_and_key.p12 -name zzizily -CAfile chain.pem -caname zzizily
 
-keytool -importkeystore -deststorepass qwe123 -destkeypass qwe123 -destkeystore letsencrypt.jks -srckeystore cert_and_key.p12 -srcstoretype PKCS12 -alias zzizily
+### 1.2 openssl, keytool(${JDK_HOME}/bin/keytool)
+
+```bash
+openssl pkcs12 -export -in cert.pem -inkey privkey.pem -out cert_and_key.p12 -name zzizily -CAfile chain.pem -caname zzizily
+password 입력 
+password 재입력
+
+
+keytool -importkeystore -deststorepass ${PASSWORD} -destkeypass ${PASSWORD} -destkeystore letsencrypt.jks -srckeystore cert_and_key.p12 -srcstoretype PKCS12 -alias zzizily
 
 keytool -importkeystore -destkeystore letsencrypt.jks -srckeystore letsencrypt.jks -deststoretype pkcs12
+```
+
+### 1.3 spring boot application.yml
+
+jks 파일을 생성 했으면 spring boot 에 적용
+
+```yml
+server:
+  ssl:
+    key-store: classpath: letsencrypt.jks
+    key-store-password: ${PASSWORD}
+    key-password: ${PASSWORD}
+```
+
+![Spring Boot SSL 적용](https://user-images.githubusercontent.com/8334910/50573012-ec66c580-0e0e-11e9-83a7-609bbf39689d.png)
+
 
 ## 2. 작업중 문제점 발생
 
@@ -122,5 +157,10 @@ zsh: no matches found: *.domain.com 진행 안됨
 _acme-challenge 2개를 입력 해주어야함 google domain 에서는 + 아이콘이 있어서 복수 입력 가능  
 dns 업체별로 방식이 다름 aws 에서는 복수 열로 입력이 가능 해서 뛰어쓰기로 구분
 
+## 숙재
+
+3개월 마다 한번씩 자동화 하기?
+
 ## 참조
 [How to use Let's Encrypt DNS challenge validation?](https://serverfault.com/questions/750902/how-to-use-lets-encrypt-dns-challenge-validation)
+[Certbot으로 만든 인증서를 Spring Boot에서 사용하기]https://elfinlas.github.io/2018/03/19/spring-boot-tls-certbot/
