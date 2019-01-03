@@ -105,6 +105,11 @@ IMPORTANT NOTES:
 root@linux:~$ cd /etc/letsencrypt
 ```
 
+- privkey.pem: 개인키
+- cert.pem: example.com 도메인 인증서
+- chain.pem: CA(The Let’s Encrypt) 기관 체인 인증서
+- fullchain.pem(cert.pem + chain.pem): 도메인의 인증서와 CA 기관 인증서
+
 ### 1.2 openssl, keytool(${JDK_HOME}/bin/keytool)
 
 ```bash
@@ -157,7 +162,7 @@ zsh: no matches found: *.domain.com 진행 안됨
 _acme-challenge 2개를 입력 해주어야함 google domain 에서는 + 아이콘이 있어서 복수 입력 가능  
 dns 업체별로 방식이 다름 aws 에서는 복수 열로 입력이 가능 해서 뛰어쓰기로 구분
 
-## 숙
+## 숙제
 
 3개월 마다 한번씩 자동화 하기?
 
