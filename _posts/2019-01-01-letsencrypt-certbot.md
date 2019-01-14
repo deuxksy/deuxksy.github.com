@@ -25,10 +25,10 @@ standalone, webroot 는 먼가 서버에 작업 한다는것이 좀 귀찮음
 
 작업 순서
 1. certbot 설치 
-1. certbot --manaul 이용한 pem 생성
-1. openssl 이용한 p12 생성
-1. keytool 이용한 jks 생성
+1. certbot 인증서 생성
+1. openssl 이용한 p12 생성, keytool 이용한 jks 생성
 1. spring boot 에 적용
+1. 작업중 문제점
 
 ## 1. certbot 설치
 
@@ -110,9 +110,7 @@ yum remove python-urllib3 python-requests
 yum install python-urllib3 python-requests certbot
 ```
 
-## 2. SSL 생성
-
-### 2.1 Certbot pem 파일 생성
+## 2. Certbot dlswm 생성
 ```bash
 root@linux:~$ sudo certbot certonly \
 > --manual \
@@ -189,7 +187,7 @@ root@linux:~$ cd /etc/letsencrypt
 - chain.pem: CA(The Let’s Encrypt) 기관 체인 인증서
 - fullchain.pem(cert.pem + chain.pem): 도메인의 인증서와 CA 기관 인증서
 
-### 2.2 openssl, keytool(${JDK_HOME}/bin/keytool)
+## 3. openssl, keytool(${JDK_HOME}/bin/keytool)
 
 ```bash
 openssl pkcs12 -export -in cert.pem -inkey privkey.pem -out cert_and_key.p12 -name zzizily -CAfile chain.pem -caname zzizily
@@ -202,7 +200,7 @@ keytool -importkeystore -deststorepass ${PASSWORD} -destkeypass ${PASSWORD} -des
 keytool -importkeystore -destkeystore letsencrypt.jks -srckeystore letsencrypt.jks -deststoretype pkcs12
 ```
 
-### 2.3 spring boot application.yml
+## 4. spring boot application.yml
 
 jks 파일을 생성 했으면 spring boot 에 적용
 
@@ -217,9 +215,9 @@ server:
 ![Spring Boot SSL 적용](https://user-images.githubusercontent.com/8334910/50573012-ec66c580-0e0e-11e9-83a7-609bbf39689d.png)
 
 
-## 3. 작업중 문제점 발생
+## 5. 작업중 문제점
 
-### 3.1 zsh
+### 5.1 zsh
 ```zsh
 root@linux:~$ sudo certbot certonly \
 > --manual \
@@ -236,7 +234,7 @@ zsh: no matches found: *.domain.com
 ```
 zsh: no matches found: *.domain.com 진행 안됨
 
-### 3.2 dns txt record 등록 
+### 5.2 dns txt record 등록 
 
 _acme-challenge 2개를 입력 해주어야함 google domain 에서는 + 아이콘이 있어서 복수 입력 가능  
 dns 업체별로 방식이 다름 aws 에서는 복수 열로 입력이 가능 해서 뛰어쓰기로 구분
