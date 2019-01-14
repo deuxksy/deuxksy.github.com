@@ -110,7 +110,7 @@ yum remove python-urllib3 python-requests
 yum install python-urllib3 python-requests certbot
 ```
 
-## 2. Certbot dlswm 생성
+## 2. Certbot 인증서 생성
 ```bash
 root@linux:~$ sudo certbot certonly \
 > --manual \
