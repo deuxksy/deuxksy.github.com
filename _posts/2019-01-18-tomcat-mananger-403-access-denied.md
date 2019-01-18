@@ -5,7 +5,7 @@ date:  2019-01-18 12:10:00
 categories: [Tomcat,Mananger]
 ---
 
-# Tomcat 
+# Tomcat Manager 접근 허용 
 
 Tomcat Mananger 를 이용해서 webapp 관리를 해야함 그런데 403 이똭!!  
 $CATALINA_HOME/webapps/manager/META-INF/context.xml 파일의 원격 적근 제한을 주석 처리  
