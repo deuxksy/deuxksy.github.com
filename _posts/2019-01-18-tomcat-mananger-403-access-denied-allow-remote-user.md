@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 403 Access Denied on Tomcat 8 Manager App without prompting for user/password
+title: Tomcat Manager 외부 접근 허용 
 date:  2019-01-18 12:10:00 
 categories: [Tomcat,Mananger]
 ---
 
-# Tomcat Manager 접근 허용 
+# Tomcat Manager 외부 접근 허용 
 
 Tomcat Mananger 를 이용해서 webapp 관리를 해야함 그런데 403 이똭!!  
 $CATALINA_HOME/webapps/manager/META-INF/context.xml 파일의 원격 적근 제한을 주석 처리  
