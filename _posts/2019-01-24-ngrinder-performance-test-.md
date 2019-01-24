@@ -23,6 +23,7 @@ categories: [naver,nGrinder,Performance]
 WAS/webapps/ngrinder.war 설치  
 localhost:8080/ngrinder 접속 기본 계정 및 비밀번호 admin/admin  
 ![01](https://user-images.githubusercontent.com/8334910/51687151-4d13a780-2035-11e9-8762-b46218747399.png)
+[ngrinder architechture](https://github.com/naver/ngrinder/wiki/Architecture)
 
 
 ## 참고
