@@ -26,5 +26,5 @@ localhost:8080/ngrinder 접속 기본 계정 및 비밀번호 admin/admin
 
 
 ## 참고
-[ngrinder brownbears.tistory.com](https://brownbears.tistory.com/category/nGrinder)
-[artillery 이용한 스트레스 테스트](https://blog.outsider.ne.kr/1238)
+- [ngrinder brownbears.tistory.com](https://brownbears.tistory.com/category/nGrinder)
+- [artillery 이용한 스트레스 테스트](https://blog.outsider.ne.kr/1238)
