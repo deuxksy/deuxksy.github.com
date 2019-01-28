@@ -17,9 +17,9 @@ categories: [naver,nGrinder,Performance]
 3. 한글
 4. 에이전트 설치 및 실행
 5. 간단한 테스트
-6. 
 
 ## 1. [설치](https://github.com/naver/ngrinder/wiki/Installation-Guide)
+
 WAS/webapps/ngrinder.war 설치  
 localhost:8080/ngrinder 접속 기본 계정 및 비밀번호 admin/admin  
 ![01](https://user-images.githubusercontent.com/8334910/51687151-4d13a780-2035-11e9-8762-b46218747399.png)
@@ -27,5 +27,6 @@ localhost:8080/ngrinder 접속 기본 계정 및 비밀번호 admin/admin
 
 
 ## 참고
+
 - [ngrinder brownbears.tistory.com](https://brownbears.tistory.com/category/nGrinder)
 - [artillery 이용한 스트레스 테스트](https://blog.outsider.ne.kr/1238)
