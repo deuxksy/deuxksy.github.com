@@ -7,7 +7,7 @@ categories: [java, 8, functional, interface]
 # Java Funcional Interface
 
 Java Lamda 가 지원 이후로 많이 생겨난 Functioanl Interface 확실히 몰라서 이번에 정리  
-이거는 외워야 하다니 ㅠ.ㅠ;  
+외우는것이 육체 건강에 좋음  
 
 ## 목차
 
