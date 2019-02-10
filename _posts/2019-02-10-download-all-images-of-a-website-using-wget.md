@@ -15,7 +15,6 @@ categories: [java, 8, functional, interface]
    2. flashget
    3. httrack
    4. wget or curl
-   5. 직접 만들어
 2. 참조
 
 ## 2. 방법
@@ -40,6 +39,8 @@ categories: [java, 8, functional, interface]
 ```bash
 wget -nd -r -P /save/location -A jpeg,jpg,bmp,gif,png http://www.imge.com
 ```
+
+[explainshell.com](https://explainshell.com/explain?cmd=wget+-nd+-r+-P+%2Fsave%2Flocation+-A+jpeg%2Cjpg%2Cbmp%2Cgif%2Cpng+http%3A%2F%2Fandar.co.kr)
 
 ## 3. 참조
 
