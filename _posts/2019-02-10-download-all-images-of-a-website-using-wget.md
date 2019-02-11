@@ -1,6 +1,6 @@
 ---
 layout: post
-title: download-all-images-of-a-website-using-wget
+title: Download all images of a website using wget
 date:  2019-02-10 18:29:00 
 categories: [java, 8, functional, interface]
 ---
