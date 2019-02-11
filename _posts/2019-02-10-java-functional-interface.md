@@ -9,14 +9,14 @@ categories: [java, 8, functional, interface]
 Java Lamda 가 지원 이후로 많이 생겨난 Functioanl Interface 확실히 몰라서 이번에 정리  
 외우는것이 육체 건강에 좋음  
 
-## 목차
+## 1. 목차
 
-1. 테스트
+1. 테스트 예제
 2. 참조
 
-### Example
+## 2. Example
 
-#### Runnable 리턴 없음 인자 없음
+### 2.1 Runnable 리턴 없음 인자 없음
 
 ```java
   public void 리턴_X_인자_X() {
@@ -25,7 +25,7 @@ Java Lamda 가 지원 이후로 많이 생겨난 Functioanl Interface 확실히 
   }
 ```
 
-#### Supplier 리턴 1개 인자 없음
+### 2.2 Supplier 리턴 1개 인자 없음
 
 ```java
   @Test
@@ -36,7 +36,7 @@ Java Lamda 가 지원 이후로 많이 생겨난 Functioanl Interface 확실히 
   }
 ```
 
-#### Consumer 리턴 없음 인자 1개
+### 2.3 Consumer 리턴 없음 인자 1개
 
 ```java
   @Test
@@ -46,7 +46,7 @@ Java Lamda 가 지원 이후로 많이 생겨난 Functioanl Interface 확실히 
   }
 ```
 
-#### Function 리턴 1개 인자 1개
+### 2.4 Function 리턴 1개 인자 1개
 
 ```java
   @Test
@@ -58,7 +58,7 @@ Java Lamda 가 지원 이후로 많이 생겨난 Functioanl Interface 확실히 
   }
 ```
 
-#### Predicate 리턴 Boolean 인자 1개
+### 2.5 Predicate 리턴 Boolean 인자 1개
 
 ```java
   @Test
@@ -69,7 +69,7 @@ Java Lamda 가 지원 이후로 많이 생겨난 Functioanl Interface 확실히 
   }
 ```
 
-#### UnaryOperator 리턴 1개 인자 1개 리턴 과 인자 같은 타입
+### 2.6 UnaryOperator 리턴 1개 인자 1개 리턴 과 인자 같은 타입
 
 Generic 때 많이 사용함
 
@@ -82,7 +82,7 @@ Generic 때 많이 사용함
   }
 ```
 
-#### BinaryOperator 리턴 1개 인자 2개 리턴 과 인자 같은 타입
+### 2.7 BinaryOperator 리턴 1개 인자 2개 리턴 과 인자 같은 타입
 
 ```java
   @Test
@@ -92,7 +92,7 @@ Generic 때 많이 사용함
   }
 ```
 
-#### BiPredicate 리턴 Boolean 인자 2개
+### 2.8 BiPredicate 리턴 Boolean 인자 2개
 
 ```java
   @Test
@@ -103,7 +103,7 @@ Generic 때 많이 사용함
   }
 ```
 
-#### BiConsumer 리턴 없음 인자 2개
+### 2.9 BiConsumer 리턴 없음 인자 2개
 
 ```java
   @Test
@@ -113,7 +113,7 @@ Generic 때 많이 사용함
   }
 ```
 
-#### BiFunction 리턴 1개 인자 2개
+### 2.10 BiFunction 리턴 1개 인자 2개
 
 ```java
   @Test
@@ -124,7 +124,7 @@ Generic 때 많이 사용함
   }
 ```
 
-#### Comparator 리턴 1개 인자 2개
+### 2.11 Comparator 리턴 1개 인자 2개
 
 기존 정렬 할때 Comparable 많이 사용 하였지만 Lamda 이후에는 Comparator 더 많이 쓰임
 
@@ -136,6 +136,6 @@ Generic 때 많이 사용함
   }
 ```
 
-### 참조
+## 3. 참조
 
 [Java8#02. 함수형 인터페이스(Functional Interface)](https://multifrontgarden.tistory.com/125)
