@@ -1,4 +1,4 @@
-[---
+---
 layout: post
 title: Spring Boot DevTools IDEA 설정
 date:   2018-12-27 16:25:00
