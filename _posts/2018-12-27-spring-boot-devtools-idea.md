@@ -27,6 +27,7 @@ IDEA Community 에서는 별도의 설정이 필요함
 
 - [x] compiler.automake.allow.when.app.runing
 - [x] ide.windowSystem.autoShowProcessPopup
+
 ![IDEA Setting](https://user-images.githubusercontent.com/8334910/53310650-15787380-38f1-11e9-878b-625f7f92ee76.png)
 
 ## 4. application.yml
