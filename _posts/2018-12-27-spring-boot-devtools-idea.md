@@ -19,7 +19,8 @@ IDEA Community 에서는 별도의 설정이 필요함
 
 ## 2. ctrl+alt+s > Build, Execution. Deployment > Compiler 
 
-[x] Build project automatically
+- [x] Build project automatically
+
 ![IDEA Compiler](https://user-images.githubusercontent.com/8334910/53310652-15787380-38f1-11e9-9501-20314afcca6b.png)
 
 ## 3. ctrl+shift+a > registry... 
