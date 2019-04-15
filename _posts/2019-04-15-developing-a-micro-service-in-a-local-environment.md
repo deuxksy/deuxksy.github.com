@@ -46,5 +46,5 @@ API A, API B, Eureka 3가지 모듈 필요
 
 ## Client & API
 Client 와 API 둘다 개발 한다.  
-외부에 있는 Client 가 내부에 있는 API 통하기 이해서는 Gateway 가 필요하다.
+외부에 있는 Client 가 내부에 있는 API 통해야 해서 Gateway 가 필요하다.
 Client, API, Gateway 3가지 모듈 필요
