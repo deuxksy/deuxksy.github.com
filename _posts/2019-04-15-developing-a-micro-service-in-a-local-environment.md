@@ -6,7 +6,7 @@ categories: [micro-service, develop, java, spring-cloud, netflix]
 ---
 # Developing a micro-service in a local environment
 micro-service 를 local 환경에서 개발하기 하기 위해서는 기존 monolithic 과는 많이 다르다.  
-**운영 환경 와 동일한 환경으로 개발을 하기 위해서는 어떻게 해야 할까?**
+**운영 환경 과 동일한 환경으로 local 에서 개발을 하기 위해서는 어떻게 해야 할까?**
 
 Spring Cloud, Netflix OSS 를 활용 한다면 4개의 어플리케이션이 필수 요소 이다.
 - Discovery (Eureka)
