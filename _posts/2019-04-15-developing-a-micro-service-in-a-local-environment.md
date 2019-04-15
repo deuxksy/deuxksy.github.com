@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java 8 functional interface
+title: Developing a micro-service in a local environment
 date:  2019-04-15 23:29:00 
 categories: [micro-service, develop, java, spring-cloud, netflix]
 ---
