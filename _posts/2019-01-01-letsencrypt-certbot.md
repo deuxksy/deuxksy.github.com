@@ -69,8 +69,8 @@ Failed:
 > --agree-tos \
 > --debug \
 > --no-bootstrap \
-> -d tricycle.co.kr \
-> -d *.tricycle.co.kr
+> -d zzizily.com \
+> -d *.zzizily.com
 Traceback (most recent call last):
   File "/bin/certbot", line 9, in <module>
     load_entry_point('certbot==0.29.1', 'console_scripts', 'certbot')()
