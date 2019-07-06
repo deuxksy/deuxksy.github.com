@@ -4,6 +4,8 @@
 > Error saving credentials: error storing credentials - err: exit status 1, out: `경로 /org/freedesktop/secrets/collection/login의 객체에 'org.freedesktop.Secret.Collection' 인터페이스가 없습니다`
 
 ## 발생
+
+```bash
 $ $(aws ecr get-login --no-include-email --region ap-northeast-2)
 WARNING! Using --password via the CLI is insecure. Use --password-stdin.
 ** Message: 19:10:47.099: Remote error from secret service: org.freedesktop.DBus.Error.UnknownMethod: ?? /org/freedesktop/secrets/collection/login? ??? 'org.freedesktop.Secret.Collection' ?????? ????
@@ -30,6 +32,7 @@ Configure a credential helper to remove this warning. See
 https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 
 Login Succeeded
+```
 
 ## 참조
 - https://github.com/docker/docker-credential-helpers/issues/60
