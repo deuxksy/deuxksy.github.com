@@ -2,7 +2,8 @@
 layout: post
 title: Java 8 functional interface
 date:  2019-02-10 18:29:00 
-categories: [java, 8, functional, interface]
+categories: [java]
+tags: [java, 8, functional, interface]
 ---
 # Java Funcional Interface
 

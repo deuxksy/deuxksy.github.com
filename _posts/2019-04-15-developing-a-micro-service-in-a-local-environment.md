@@ -2,7 +2,8 @@
 layout: post
 title: Developing a micro-service in a local environment
 date:  2019-04-15 23:29:00 
-categories: [micro-service, develop, java, spring-cloud, netflix]
+categories: [msa]
+tags: [develop, java, spring-cloud, netflix]
 ---
 # Developing a micro-service in a local environment
 micro-service 를 local 환경에서 개발하기 하기 위해서는 기존 monolithic 과는 많이 다르다.  
